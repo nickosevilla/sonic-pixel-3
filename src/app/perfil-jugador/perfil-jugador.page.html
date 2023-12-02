@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>Perfil de Jugador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-header">
+    <ion-avatar class="profile-avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar del jugador" />
+    </ion-avatar>
+    <h1 class="profile-name">Rafa34ElPoderoso</h1>
+    <p class="profile-details">Juego favorito: League of Legends</p>
+    <p class="profile-details">Threads publicados: 23</p>
+  </div>
+
+  <ion-card class="profile-card">
+    <ion-card-header>
+      <ion-card-title>Información</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Puntuación: 1500</p>
+      <p>Amigos: 47</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="primary" class="edit-profile-button">Editar Perfil</ion-button>
+
+  <div class="game-history">
+    <h2>Historial de Juegos</h2>
+    <ion-item>
+      <ion-label>Juego 1 - Victoria épica</ion-label>
+      <ion-note slot="end">2023-09-29</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Juego 2 - Derrota ajustada</ion-label>
+      <ion-note slot="end">2023-09-28</ion-note>
+    </ion-item>
+    <!-- Añadir más ítems de historial según sea necesario -->
+  </div>
+
+  <div class="achievements">
+    <h2>Logros</h2>
+    <ion-chip color="primary">
+      <ion-label>Campeón de la Liga</ion-label>
+    </ion-chip>
+    <ion-chip color="secondary">
+      <ion-label>Maestro Estratega</ion-label>
+    </ion-chip>
+    <!-- Añadir más chips de logros según sea necesario -->
+  </div>
+
+  <div class="privacy-settings">
+    <h2>Privacidad</h2>
+    <ion-item>
+      <ion-label>Mostrar en línea</ion-label>
+      <ion-toggle slot="end" checked></ion-toggle>
+    </ion-item>
+    <!-- Añadir más ajustes de privacidad según sea necesario -->
+  </div>
+</ion-content>

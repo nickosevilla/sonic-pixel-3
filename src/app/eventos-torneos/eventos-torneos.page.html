@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Eventos y Torneos Gamer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Sección de torneos -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1>Torneos Destacados</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- Tarjeta de torneo 1 -->
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card>
+          <img src="assets/OIP.jpg" alt="League of Legends Tournament" />
+          <ion-card-header>
+            <ion-card-title>Torneo de League of Legends</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Participa en el épico torneo de LoL y gana premios exclusivos. Fecha: 20 de Diciembre, 2023.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <!-- Repite las tarjetas para otros torneos -->
+    </ion-row>
+  </ion-grid>
+
+  <!-- Sección de eventos -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1>Próximos Eventos</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- Tarjeta de evento 1 -->
+      <ion-col size="12" size-md="4">
+        <ion-card>
+          <img src="assets/OIP (1).jpg" alt="Cosplay Contest" />
+          <ion-card-header>
+            <ion-card-title>Concurso de Cosplay</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Vístete como tu personaje favorito y compite por ser el mejor cosplayer. Fecha: 15 de Noviembre, 2023.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <!-- Repite las tarjetas para otros eventos -->
+    </ion-row>
+  </ion-grid>
+</ion-content>

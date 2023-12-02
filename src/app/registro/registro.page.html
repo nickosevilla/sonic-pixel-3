@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Registro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="login-card">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nombre" type="text" required class="highlight-input"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input [(ngModel)]="email" type="email" required class="highlight-input"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" type="password" required class="highlight-input"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" (click)="register()" class="uniform-button">Registrarse</ion-button>
+    <ion-button expand="full" (click)="goBack()" class="uniform-button" fill="outline">Volver atrás</ion-button>
+  </ion-card>
+</ion-content>

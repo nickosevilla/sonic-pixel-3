@@ -1,0 +1,82 @@
+.background {
+  --background: url('../../assets/hero.jpg') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alineación vertical al inicio */
+  align-items: center;
+  height: 100%;
+  padding-top: 40%; /* Aumentado para bajar el contenido */
+}
+
+.login-card {
+  --background: rgba(0, 0, 0, 0); /* Transparente */
+  border-radius: 15px;
+  padding: 30px;
+  width: 60%; 
+  max-height: 500px; 
+  overflow-y: auto; 
+  margin: auto;
+  margin-top: 10%; /* Aumentado para bajar el contenido */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+ion-button.uniform-button-iniciar {
+  --background: #8808f0;
+  --color: white;
+  margin-top: 10px;
+}
+
+ion-button.uniform-button-registrar {
+  --background: #8808f0;
+  --color: white;
+  margin-top: 10px;
+}
+
+ion-list ion-item {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  --padding-start: 0; 
+  --padding-end: 0; 
+  --inner-padding-end: 0; 
+  --inner-padding-start: 0; 
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.uniform-text {
+  font-family: 'Arial', sans-serif;
+  color: rgb(255, 255, 255); 
+  font-size: 18px; 
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+ion-list {
+  background-color: transparent; 
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    width: 90%; 
+    margin-top: 20%; /* Aumentado para bajar el contenido en móviles */
+  }
+
+  .logo {
+    width: 120px; 
+  }
+
+  ion-list ion-item {
+    margin-top: 15px; 
+  }
+}

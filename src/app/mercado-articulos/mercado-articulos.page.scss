@@ -1,0 +1,66 @@
+.store-content {
+  --background: #1E1E1E;
+  color: #fff;
+}
+
+ion-toolbar {
+  --background: #0D0D0D; /* Color más oscuro para un look más intenso */
+  --color: #4CAF50; /* Verde brillante para destacar */
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Columnas más anchas */
+  gap: 24px; /* Espacio más grande entre tarjetas */
+}
+
+.custom-card {
+  border-radius: 12px; /* Bordes redondeados pero sutiles */
+  background-color: #262626; /* Fondo oscuro con textura sutil */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más dinámica */
+}
+
+.custom-card:hover {
+  transform: scale(1.03); /* Efecto de escala sutil al pasar el mouse */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.item-image {
+  max-width: 100%;
+  height: 200px; /* Altura fija para unificar la presentación */
+  object-fit: cover;
+}
+
+.custom-card-title {
+  font-size: 22px; /* Ajuste en tamaño de fuente */
+  font-weight: bold;
+  color: #4CAF50; /* Color verde para títulos */
+}
+
+.custom-card-subtitle {
+  font-size: 16px;
+  color: #BBBBBB; /* Subtítulo en tono gris claro para mejor contraste */
+}
+
+.custom-card-content {
+  padding: 16px; /* Aumento del padding para mejor legibilidad */
+}
+
+.custom-button {
+  margin-top: 16px;
+  font-weight: bold;
+  --color: #fff;
+  --background: #4CAF50; /* Botón en verde brillante */
+}
+
+ion-button[color="dark"] {
+  --background: #4CAF50;
+  --color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+ion-button[color="dark"]:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
